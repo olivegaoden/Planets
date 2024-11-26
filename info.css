@@ -1,0 +1,99 @@
+/* General reset and body styling for a futuristic theme */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0e0f13; /* Dark space-like background */
+    color: #fff; /* Light text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main container for the planet info page */
+.info-page {
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3); /* Neon glow effect */
+    width: 70%; /* Control width */
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Styling for the planet title */
+#planet-info-title {
+    font-size: 2em;
+    color: #00e5ff; /* Bright cyan to represent the space vibe */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Container for all planet descriptions */
+#planet-info-description {
+    text-align: left;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Section styling */
+.info-section {
+    margin-bottom: 30px; /* Space between sections */
+}
+
+/* Header for individual sections */
+.info-section h2 {
+    font-size: 0.9 em;
+    color: #00e5ff; /* Bright cyan for section titles */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Text for cultural context */
+#planet-info-culture {
+    font-size: 0.75 em;
+    color: #bbb; /* Light gray text */
+    line-height: 1.8;
+    font-family: 'Inter', sans-serif; /* Apply 'Inter' for body text */
+    margin-bottom: 10px;
+}
+
+/* Text for view of feminism */
+#planet-info-feminism {
+    font-size: 0.75 em;
+    color: #bbb;
+    line-height: 1.8;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Text for conflict with FIMC */
+#planet-info-conflict {
+    font-size: 0.75 em;
+    color: #bbb;
+    line-height: 1.8;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Button to return to the main space page */
+button {
+    background-color: #00e5ff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    color: #0e0f13;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button:hover {
+    background-color: #00b8cc;
+    box-shadow: 0 0 10px #00e5ff;
+}

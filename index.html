@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Planets</h2>
+        <ul id="planet-list"></ul>
+    </div>
+    <div class="space">
+        <div class="dimmed-planet" id="dimmed-planet" onclick="setupDimmedPlanetClick()">
+            <span id="dimmed-name">Inactive Planet</span>
+        </div>
+        <div class="planet" id="planet" onclick="goToPlanetInfo()">
+            <span id="planet-name">Active Planet</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

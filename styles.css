@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #000000;
+    color: #bbb;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #000000;
+}
+
+.sidebar li:hover {
+    background-color: #34495e;
+}
+
+/* Space View */
+.space {
+    flex-grow: 1;
+    position: relative;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.planet {
+    position: absolute;
+    bottom: -30%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(223, 138, 138, 0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    z-index: 2;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s ease, z-index 0.8s ease; /* Smooth transition */
+    cursor: pointer;
+    transform-origin: center center; /* Ensure scaling happens from the center */
+}
+
+.dimmed-planet {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    opacity: 0.3;
+    font-size: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+/* When the planet is clicked and becomes active */
+.planet.active-planet {
+    opacity: 1; /* Make the planet fully visible */
+    transform: scale(1.2) translateZ(30px); /* Grow and move forward */
+    z-index: 10; /* Bring it to the front */
+}
