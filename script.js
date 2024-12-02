@@ -38,58 +38,6 @@ function spotlightPlanet(index) {
     updatePlanetView();
 }
 
-// function spotlightPlanet(index) {
-//     const planetElement = document.getElementById("planet");
-//     const dimmedPlanet = document.getElementById("dimmed-planet");
-
-//     // Swap z-index to bring the clicked planet to the front
-//     dimmedPlanet.style.zIndex = "2";  // Bring clicked planet forward
-//     planetElement.style.zIndex = "1"; // Move spotlighted planet back
-
-//     // Add the animation class for transition
-//     planetElement.classList.add("animate-planet-transition");
-
-//     // Wait for the animation to finish before switching the planet
-//     setTimeout(() => {
-//         currentPlanetIndex = index;  // Move to the next planet
-//         updatePlanetView();  // Update the view with the new planet
-
-//         // Reset the animation class after the transition
-//         planetElement.classList.remove("animate-planet-transition");
-
-//         // Reset z-index after the transition
-//         planetElement.style.zIndex = "2"; // Spotlighted planet comes to the front
-//         dimmedPlanet.style.zIndex = "1"; // Dimmed planet goes to the back
-//     }, 0);  // Adjust the timeout duration to match the animation time
-// }
-// Spotlight a specific planet
-// function spotlightPlanet(index) {
-//     // Get the currently active planet element
-//     const planetElement = document.getElementById("planet");
-//     const dimmedPlanet = document.getElementById("dimmed-planet");
-
-//     // Remove the 'active-planet' class from the previous active planet
-//     planetElement.classList.remove("active-planet");
-//     dimmedPlanet.classList.remove("active-planet");
-
-//     // Apply the animation class to the clicked planet
-//     planetElement.classList.add("active-planet");
-
-//     // Update the current planet index
-//     currentPlanetIndex = index;
-
-//     // Update the view with the new planet details
-//     updatePlanetView();
-
-//     // Optionally, update z-index or other properties to ensure visibility
-//     planetElement.style.zIndex = "10";
-//     dimmedPlanet.style.zIndex = "1";
-
-//     // Reset the 'active-planet' class after animation is complete
-//     setTimeout(() => {
-//         planetElement.classList.remove("active-planet");
-//     }, 500);  // Duration should match the CSS transition duration
-// }
 // Spotlight a specific planet
 function spotlightPlanet(index) {
     const planetElement = document.getElementById("planet");
